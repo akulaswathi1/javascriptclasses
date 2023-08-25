@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>my tally counter</h3>
+    <button id="clickme" onclick="increment()">clickme:0</button>
+    <button onclick="reset()">reset</button>
+    <button onclick="decrement()">decrement</button>
+    <script>
+        var count=0;
+        function increment(){
+            count++
+            document.getElementById("clickme").innerHTML="clickme: "+count;
+        }
+        function reset(){
+            count=0
+            document.getElementById("clickme").innerHTML= count;
+        }
+        function decrement(){
+            count--
+            document.getElementById("clickme").innerHTML="clickme: "+count;
+        }
+    </script>
+     
+</body>
+</html>
